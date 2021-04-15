@@ -11,7 +11,7 @@ indent: true
 \begin{center}
 \textbf{Résumé}
 \end{center}
-Les services du gouvernement ont renové en 2020 la [marque de l'État français](https://www.gouvernement.fr/marque-Etat. Ils proposent une charte graphique complète et cohérente articulée autour de couleurs, d'éléments typographiques (dont la police Marianne) ainsi que de blocs-marques pour chaque administration. Inspirés par les travaux réalisés outre-Manche autour du package [`govdown`](https://ukgovdatascience.github.io/govdown/) qui permet d'utiliser directement dans R les éléments de la charte publique britannique, le package [`gouvdown`](https://github.com/spyrales/gouvdown) a été créé par des agents publics pour proposer une prise en main et une implémentation facilitée des éléments de la marque État. Cette présentation a pour objectif de détailler le contenu de ce package et d'en présenter quelques exemples d'utilisations.
+Les services du Gouvernement ont renové en 2020 la [marque de l'État français](https://www.gouvernement.fr/marque-Etat. Ils proposent une charte graphique complète et cohérente articulée autour de couleurs, d'éléments typographiques (dont la police Marianne) ainsi que de blocs-marques pour chaque administration. Inspirés par les travaux réalisés outre-Manche autour du package [`govdown`](https://ukgovdatascience.github.io/govdown/) qui permet d'utiliser directement dans R les éléments de la charte publique britannique, le package [`gouvdown`](https://github.com/spyrales/gouvdown) a été créé par des agents publics pour proposer une prise en main et une implémentation facilitée des éléments de la marque État. Cette présentation a pour objectif de détailler le contenu de ce package et d'en présenter quelques exemples d'utilisations.
 
 Il s'agit là d'une présentation courte, au format 6 minutes.
 
@@ -29,7 +29,7 @@ Enfin on présentera les avantages à construire un package qui implémente les 
 
   + échelles de couleurs ;
   + thèmes `ggplot2` ;
-  + template Rmarkdown ;
+  + template R Markdown ;
   + template `pagedown` permettant des mises en pages fines.
   
 3. Enfin la conclusion sera tournée vers des utlisations possibles, avec en exemple la brochure de la [démarche PROPRE](https://github.com/spyrales/propre.brochure).
