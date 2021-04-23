@@ -1,7 +1,7 @@
 ---
 title: "Gouvdown - Une implémentation de la marque État"
 author:
-- Romain Lesur ^[INSEE, auteur1@institut1.com]
+- Romain Lesur ^[INSEE, romain.lesur@insee.fr]
 - Maël Theulière^[DREAL Pays-de-la-Loire, auteur2@institut2.com]
 - Thomas Vroylandt^[Tillac, thomas@tillac-data.com]
 output: pdf_document
