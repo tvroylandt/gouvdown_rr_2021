@@ -2,7 +2,7 @@
 title: "Gouvdown - Une implémentation de la marque État"
 author:
 - Romain Lesur ^[INSEE, romain.lesur@insee.fr]
-- Maël Theulière^[DREAL Pays-de-la-Loire, auteur2@institut2.com]
+- Maël Theulière^[DREAL Pays-de-la-Loire, mael.theuliere@developpement-durable.gouv.fr]
 - Thomas Vroylandt^[Tillac, thomas@tillac-data.com]
 output: pdf_document
 indent: true
@@ -30,6 +30,7 @@ Enfin on présentera les avantages à construire un package qui implémente les 
   + échelles de couleurs ;
   + thèmes `ggplot2` ;
   + template R Markdown ;
+  + template bookdown ;
   + template `pagedown` permettant des mises en pages fines.
   
 3. Enfin la conclusion sera tournée vers des utlisations possibles, avec en exemple la brochure de la [démarche PROPRE](https://github.com/spyrales/propre.brochure).
