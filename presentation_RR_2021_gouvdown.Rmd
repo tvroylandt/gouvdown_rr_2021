@@ -1,0 +1,61 @@
+---
+title: "Gouvdown - Une implémentation de la marque État"
+author:
+- Romain Lesur (INSEE)
+- Maël Theulière (DREAL Pays-de-la-Loire)
+- Thomas Vroylandt (Tillac)
+date: "Rencontres R 2021"
+output:
+  xaringan::moon_reader
+---
+
+# Pourquoi {gouvdown} ?
+
+---
+
+## La marque-État
+
+---
+
+## L'inspiration anglaise : {govdown}
+
+---
+
+## Construire un package
+
+
+---
+
+# Qui a-t-il dedans ?
+
+---
+
+## Élémets graphiques
+
+---
+
+## RMarkdown
+
+
+---
+
+# Et ça sert à quoi ?
+
+---
+
+## Liste d'exemples
+
++ démarche PROPRE --> renvoi vers l'autre présentation
++ http://www.donnees.pays-de-la-loire.developpement-durable.gouv.fr/publications/ecln/ECLN_Conj_2020T3.html (capture écran TODO)
+
+---
+
+# Et ensuite ?
+
+---
+
+## Encore des bouts à développer
+
+## Une utilisation à diffuser
+
+## Ouverture aux contributions
