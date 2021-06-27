@@ -28,9 +28,7 @@ IMAGE
 
 + Des blocs-marques déclinables par institution
 
-IMAGE
-
-+ https://www.gouvernement.fr/marque-Etat
++ Pour en savoir plus : https://www.gouvernement.fr/marque-Etat
 
 ---
 
@@ -116,7 +114,7 @@ class: inverse, center, middle
 
 + d'autres formats Markdown
 
-+ Shiny (LIEN ISSUE)
++ Shiny [-> issue ici](https://github.com/spyrales/gouvdown/issues/7)
 
 ## Une utilisation à diffuser
 
@@ -126,11 +124,11 @@ class: inverse, center, middle
 
 ## Ouverture aux contributions
 
-Les contributions sont ouvertes
+Les contributions sont ouvertes à tous.
 
 ---
 # Liens
 
-+ https://spyrales.github.io/gouvdown/index.html
++ Documentation : https://spyrales.github.io/gouvdown/index.html
 
-+ https://github.com/spyrales/gouvdown/
++ Github : https://github.com/spyrales/gouvdown/
