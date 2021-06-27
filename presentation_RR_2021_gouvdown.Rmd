@@ -9,9 +9,14 @@ output:
   xaringan::moon_reader:
     css: "gouvdown_xaringan.css"
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
 class: inverse, center, middle
 
-# Pourquoi {gouvdown} ?
+# Pourquoi {`gouvdown`} ?
 ---
 
 ## La marque-État
@@ -20,11 +25,23 @@ class: inverse, center, middle
 
 + Un jeu de couleurs
 
-IMAGE
+```{r, fig.width=3, fig.height=2, fig.align='center'}
+knitr::include_graphics("img/couleurs_bbr.png", dpi = 300)
+```
 
-+ Des typographiques (dont la Marianne)
+```{r, fig.width=3, fig.height=2, fig.align='center'}
+knitr::include_graphics("img/couleurs_autres.png", dpi = 300)
+```
 
-IMAGE
+---
+
+## La marque-État
+
++ Des typographies (dont la Marianne spécialement crée pour)
+
+```{r, fig.width=3, fig.height=2, fig.align='center'}
+knitr::include_graphics("img/police_marianne.png", dpi = 150)
+```
 
 + Des blocs-marques déclinables par institution
 
@@ -44,9 +61,11 @@ IMAGE
 
 ---
 
-## L'inspiration anglaise : {govdown}
+## L'inspiration anglaise : {`govdown`}
 
-EXEMPLE FORMAT
+```{r, fig.width=3, fig.height=4, fig.align='center'}
+knitr::include_graphics("img/govdown.png", dpi = 200)
+```
 
 + https://ukgovdatascience.github.io/govdown/
 
@@ -59,11 +78,19 @@ class: inverse, center, middle
 
 ## Éléments graphiques
 
-+ palettes
++ Des palettes
 
-+ thèmes {ggplot2} (normaux et cartes)
+```{r, fig.width=3, fig.height=3, fig.align='center'}
+knitr::include_graphics("img/palette_gouvdown.png", dpi = 300)
+```
 
-+ Doc : https://spyrales.github.io/gouvdown/articles/graph_gouv.html
++ Des thèmes {`ggplot2`}
+
+```{r, fig.width=3, fig.height=2, fig.align='center'}
+knitr::include_graphics("img/graph_gouvdown.png",  dpi = 400)
+```
+
++ Une documentation associée : https://spyrales.github.io/gouvdown/articles/graph_gouv.html
 
 ---
 
@@ -73,13 +100,25 @@ Différents templates
 
 + Web
 
-IMAGE
+```{r, fig.width=3, fig.height=2, fig.align='center'}
+knitr::include_graphics("img/rmd_gouvdown.png", dpi = 400)
+```
 
-+ {pagedown}, doc : (UNE FOIS LA PR MERGED)
+```{r, fig.width=3, fig.height=2, fig.align='center'}
+knitr::include_graphics("img/bookdown_gouvdown.png", dpi = 400)
+```
 
-IMAGE
+---
 
-+ {xaringan} --> a intégrer depuis CSS
+## RMarkdown
+
++ {`pagedown`}, doc : (UNE FOIS LA PR MERGED)
+
+```{r, fig.width=3, fig.height=3, fig.align='center'}
+knitr::include_graphics("img/propre_gouvdown.png", dpi = 300)
+```
+
++ {`xaringan`} : Ce que vous voyez ici--> a intégrer depuis CSS
 
 ---
 
@@ -89,7 +128,9 @@ IMAGE
 
 + Blocs-marques
 
-IMAGE
+```{r, fig.width=3, fig.height=3, fig.align='center'}
+knitr::include_graphics("img/blocs-marques gouv.png", dpi = 200)
+```
 
 ---
 class: inverse, center, middle
@@ -100,8 +141,13 @@ class: inverse, center, middle
 
 ## Liste d'exemples
 
-+ démarche PROPRE --> renvoi vers l'autre présentation
-+ http://www.donnees.pays-de-la-loire.developpement-durable.gouv.fr/publications/ecln/ECLN_Conj_2020T3.html (capture écran TODO)
++ démarche PROPRE --> *Présentation de la démarche PROPRE - PROcessus de Publications REproductibles* ce matin
+
++ http://www.donnees.pays-de-la-loire.developpement-durable.gouv.fr/publications/ecln/ECLN_Conj_2020T3.html
+
+```{r, fig.width=4, fig.height=3, fig.align='center'}
+knitr::include_graphics("img/ex_ecln.png", dpi = 140)
+```
 
 ---
 class: inverse, center, middle
