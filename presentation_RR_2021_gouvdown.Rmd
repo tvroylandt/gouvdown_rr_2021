@@ -65,8 +65,6 @@ class: inverse, center, middle
 
 + thèmes {ggplot2} (normaux et cartes)
 
-+ tableaux --> TO DO
-
 + Doc : https://spyrales.github.io/gouvdown/articles/graph_gouv.html
 
 ---
@@ -83,7 +81,7 @@ IMAGE
 
 IMAGE
 
-+ {xaringan} --> TODO pour cette prez
++ {xaringan} --> a intégrer depuis CSS
 
 ---
 
