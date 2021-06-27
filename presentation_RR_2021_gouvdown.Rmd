@@ -1,16 +1,17 @@
 ---
 title: "Gouvdown - Une implémentation de la marque État"
+subtitle: "Rencontres R 2021"
 author:
 - Romain Lesur (INSEE)
 - Maël Theulière (DREAL Pays-de-la-Loire)
 - Thomas Vroylandt (Tillac)
-date: "Rencontres R 2021"
 output:
-  xaringan::moon_reader
+  xaringan::moon_reader:
+    css: "gouvdown_xaringan.css"
 ---
+class: inverse, center, middle
 
 # Pourquoi {gouvdown} ?
-
 ---
 
 ## La marque-État
@@ -52,6 +53,7 @@ EXEMPLE FORMAT
 + https://ukgovdatascience.github.io/govdown/
 
 ---
+class: inverse, center, middle
 
 # Qui a-t-il dedans ?
 
@@ -94,6 +96,7 @@ IMAGE
 IMAGE
 
 ---
+class: inverse, center, middle
 
 # Et ça sert à quoi ?
 
@@ -105,6 +108,7 @@ IMAGE
 + http://www.donnees.pays-de-la-loire.developpement-durable.gouv.fr/publications/ecln/ECLN_Conj_2020T3.html (capture écran TODO)
 
 ---
+class: inverse, center, middle
 
 # Et ensuite ?
 
@@ -127,7 +131,6 @@ IMAGE
 Les contributions sont ouvertes
 
 ---
-
 # Liens
 
 + https://spyrales.github.io/gouvdown/index.html
