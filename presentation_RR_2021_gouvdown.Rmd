@@ -72,7 +72,7 @@ knitr::include_graphics("img/govdown.png", dpi = 200)
 ---
 class: inverse, center, middle
 
-# Qui a-t-il dedans ?
+# Qu'y a-t-il dedans ?
 
 ---
 
