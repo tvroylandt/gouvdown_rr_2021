@@ -7,7 +7,15 @@ author:
 - Thomas Vroylandt (Tillac)
 output:
   xaringan::moon_reader:
-    css: "gouvdown_xaringan.css"
+    css: [gouvdown_xaringan.css, progress-bar.css]
+    nature:
+      countIncrementalSlides: false
+      ratio: '16:9'
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
 ---
 
 ```{r setup, include=FALSE}
@@ -16,12 +24,19 @@ knitr::opts_chunk$set(echo = FALSE)
 
 class: inverse, center, middle
 
-# Pourquoi {`gouvdown`} ?
+# Qu'est ce que la marque-Etat ?
+
 ---
 
-## La marque-État
+## La marque-État, pourquoi ?
 
-+ Une présence de l'État modernisée : " Là où l’État est présent, agit, finance, sa présence doit être clairement identifiée."
+### Une présence de l'État modernisée  
+
+# " Là où l’État est présent, agit, finance, sa présence doit être clairement identifiée."
+
+---
+
+## La marque-État en détail
 
 + Un jeu de couleurs
 
@@ -35,7 +50,7 @@ knitr::include_graphics("img/couleurs_autres.png", dpi = 300)
 
 ---
 
-## La marque-État
+## La marque-État en détail
 
 + Des typographies (dont la Marianne spécialement crée pour)
 
@@ -45,11 +60,17 @@ knitr::include_graphics("img/police_marianne.png", dpi = 150)
 
 + Des blocs-marques déclinables par institution
 
++ Des templates bureautiques
+
 + Pour en savoir plus : https://www.gouvernement.fr/marque-Etat
+---
+class: inverse, center, middle
+
+# Pourquoi {`gouvdown`} ?
 
 ---
 
-## Construire un package
+## Construire un package pour faciliter la vie
 
 + De nombreux utilisateurs de R dans la sphère publique
 
@@ -63,11 +84,17 @@ knitr::include_graphics("img/police_marianne.png", dpi = 150)
 
 ## L'inspiration anglaise : {`govdown`}
 
+
+Govdown, la déclinaison du design system britannique en package R. 
+
+Développé dans le cadre de la mise en place du *Reproducible Analytical Pipeline (RAP)*
+
+[En savoir plus](https://ukgovdatascience.github.io/govdown/)
+
 ```{r, fig.width=3, fig.height=4, fig.align='center'}
 knitr::include_graphics("img/govdown.png", dpi = 200)
 ```
 
-+ https://ukgovdatascience.github.io/govdown/
 
 ---
 class: inverse, center, middle
@@ -76,57 +103,84 @@ class: inverse, center, middle
 
 ---
 
-## Éléments graphiques
+## Des éléments graphiques
 
-+ Des palettes
+### Des palettes
 
-```{r, fig.width=3, fig.height=3, fig.align='center'}
+```{r, out.width='70%', fig.align='center'}
 knitr::include_graphics("img/palette_gouvdown.png", dpi = 300)
 ```
+---
+## Des éléments graphiques
 
-+ Des thèmes {`ggplot2`}
+### Des thèmes {`ggplot2`}
 
-```{r, fig.width=3, fig.height=2, fig.align='center'}
-knitr::include_graphics("img/graph_gouvdown.png",  dpi = 400)
+```{r, out.width='70%', fig.align='center'}
+knitr::include_graphics("img/graph_gouvdown.png",  dpi = 300)
 ```
-
-+ Une documentation associée : https://spyrales.github.io/gouvdown/articles/graph_gouv.html
 
 ---
+## Des éléments graphiques
 
-## RMarkdown
+### Avec Une documentation associée
 
-Différents templates
 
-+ Web
 
-```{r, fig.width=3, fig.height=2, fig.align='center'}
-knitr::include_graphics("img/rmd_gouvdown.png", dpi = 400)
-```
-
-```{r, fig.width=3, fig.height=2, fig.align='center'}
-knitr::include_graphics("img/bookdown_gouvdown.png", dpi = 400)
+```{r, out.width='70%', fig.align='center', fig.link = 'https://spyrales.github.io/gouvdown/articles/graph_gouv.html'}
+knitr::include_graphics("img/doc.png",  dpi = 300)
 ```
 
 ---
 
-## RMarkdown
+## Des templates R Markdown
 
-+ {`pagedown`}, doc : (UNE FOIS LA PR MERGED)
+### Le template "classique"
 
-```{r, fig.width=3, fig.height=3, fig.align='center'}
-knitr::include_graphics("img/propre_gouvdown.png", dpi = 300)
+```{r, fig.align='center', out.height='80%'}
+knitr::include_graphics("img/rmd_gouvdown.png", dpi = 200)
 ```
+---
 
-+ {`xaringan`} : Ce que vous voyez ici--> a intégrer depuis CSS
+## Des templates R Markdown
+
+### Le template bookdown
+
+```{r, fig.align='center', out.width='100%'}
+knitr::include_graphics("img/bookdown_gouvdown.png", dpi = 200)
+```
 
 ---
 
-## Utilitaires
+## Des templates R Markdown
 
-+ Intégration des polices
+### Le template {`pagedown`}
 
-+ Blocs-marques
+Bientôt !
+
+```{r, fig.align='center', out.height='80%'}
+knitr::include_graphics("img/propre_gouvdown.png", dpi = 200)
+```
+
+---
+
+## Des templates R Markdown
+
+### Le template {`xaringan`}
+
+Bientôt !
+
+Ce que vous voyez ici 
+
+--> a intégrer le CSS dans le package
+
+--> créer un template ad hoc dans {`gouvdown`}
+---
+
+## Des utilitaires
+
++ Intégration des polices **Marianne** et **Spectral**
+
++ Intégration des blocs-marques
 
 ```{r, fig.width=3, fig.height=3, fig.align='center'}
 knitr::include_graphics("img/blocs-marques gouv.png", dpi = 200)
@@ -155,23 +209,33 @@ class: inverse, center, middle
 # Et ensuite ?
 
 ---
+## Et ensuite ?
 
-## Encore des bouts à développer
+### Des fonctionnalités à intégrer
 
-+ d'autres formats Markdown
++ Bien documenter l'existant
 
-+ Shiny [-> issue ici](https://github.com/spyrales/gouvdown/issues/7)
++ Ajouter d'autres formats Markdown
 
-## Une utilisation à diffuser
++ Ajouter un template Shiny [-> issue ici](https://github.com/spyrales/gouvdown/issues/7)
+
++ Ajouter des feuilles de style ad-hoc pour les htmlwidgets (type `{apexcharter}`)
+
+### Une utilisation à diffuser
 
 + Besoin d'utilisations et de reprises dans différents contextes
 
 + Ce n'est jamais qu'un package "support" de réalisations plus belles
+---
+## Et ensuite ?
 
-## Ouverture aux contributions
+### Ouverture aux contributions
 
 Les contributions sont ouvertes à tous.
 
+### Une gouvernance à mettre en place
+
+En lien avec https://www.systeme-de-design.gouv.fr/ ?
 ---
 # Liens
 

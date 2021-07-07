@@ -6,8 +6,9 @@
     <meta name="author" content="Romain Lesur (INSEE)" />
     <meta name="author" content="Maël Theulière (DREAL Pays-de-la-Loire)" />
     <meta name="author" content="Thomas Vroylandt (Tillac)" />
-    <script src="presentation_RR_2021_gouvdown_files/header-attrs-2.9/header-attrs.js"></script>
+    <script src="presentation_RR_2021_gouvdown_files/header-attrs-2.8/header-attrs.js"></script>
     <link rel="stylesheet" href="gouvdown_xaringan.css" type="text/css" />
+    <link rel="stylesheet" href="progress-bar.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -26,12 +27,19 @@ class: center, middle, inverse, title-slide
 
 class: inverse, center, middle
 
-# Pourquoi {`gouvdown`} ?
+# Qu'est ce que la marque-Etat ?
+
 ---
 
-## La marque-État
+## La marque-État, pourquoi ?
 
-+ Une présence de l'État modernisée : " Là où l’État est présent, agit, finance, sa présence doit être clairement identifiée."
+### Une présence de l'État modernisée  
+
+# " Là où l’État est présent, agit, finance, sa présence doit être clairement identifiée."
+
+---
+
+## La marque-État en détail
 
 + Un jeu de couleurs
 
@@ -41,7 +49,7 @@ class: inverse, center, middle
 
 ---
 
-## La marque-État
+## La marque-État en détail
 
 + Des typographies (dont la Marianne spécialement crée pour)
 
@@ -49,11 +57,17 @@ class: inverse, center, middle
 
 + Des blocs-marques déclinables par institution
 
++ Des templates bureautiques
+
 + Pour en savoir plus : https://www.gouvernement.fr/marque-Etat
+---
+class: inverse, center, middle
+
+# Pourquoi {`gouvdown`} ?
 
 ---
 
-## Construire un package
+## Construire un package pour faciliter la vie
 
 + De nombreux utilisateurs de R dans la sphère publique
 
@@ -67,9 +81,15 @@ class: inverse, center, middle
 
 ## L'inspiration anglaise : {`govdown`}
 
+
+Govdown, la déclinaison du design system britannique en package R. 
+
+Développé dans le cadre de la mise en place du *Reproducible Analytical Pipeline (RAP)*
+
+[En savoir plus](https://ukgovdatascience.github.io/govdown/)
+
 &lt;img src="img/govdown.png" width="334" style="display: block; margin: auto;" /&gt;
 
-+ https://ukgovdatascience.github.io/govdown/
 
 ---
 class: inverse, center, middle
@@ -78,47 +98,72 @@ class: inverse, center, middle
 
 ---
 
-## Éléments graphiques
+## Des éléments graphiques
 
-+ Des palettes
+### Des palettes
 
-&lt;img src="img/palette_gouvdown.png" width="215" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/palette_gouvdown.png" width="70%" style="display: block; margin: auto;" /&gt;
+---
+## Des éléments graphiques
 
-+ Des thèmes {`ggplot2`}
+### Des thèmes {`ggplot2`}
 
-&lt;img src="img/graph_gouvdown.png" width="369" style="display: block; margin: auto;" /&gt;
+&lt;img src="img/graph_gouvdown.png" width="70%" style="display: block; margin: auto;" /&gt;
 
-+ Une documentation associée : https://spyrales.github.io/gouvdown/articles/graph_gouv.html
+---
+## Des éléments graphiques
+
+### Avec Une documentation associée
+
+
+
+&lt;a href="https://spyrales.github.io/gouvdown/articles/graph_gouv.html" target="_blank"&gt;&lt;img src="img/doc.png" width="70%" style="display: block; margin: auto;" /&gt;&lt;/a&gt;
 
 ---
 
-## RMarkdown
+## Des templates R Markdown
 
-Différents templates
+### Le template "classique"
 
-+ Web
+&lt;img src="img/rmd_gouvdown.png" width="368" height="80%" style="display: block; margin: auto;" /&gt;
+---
 
-&lt;img src="img/rmd_gouvdown.png" width="184" style="display: block; margin: auto;" /&gt;
+## Des templates R Markdown
 
-&lt;img src="img/bookdown_gouvdown.png" width="365" style="display: block; margin: auto;" /&gt;
+### Le template bookdown
+
+&lt;img src="img/bookdown_gouvdown.png" width="100%" style="display: block; margin: auto;" /&gt;
 
 ---
 
-## RMarkdown
+## Des templates R Markdown
 
-+ {`pagedown`}, doc : (UNE FOIS LA PR MERGED)
+### Le template {`pagedown`}
 
-&lt;img src="img/propre_gouvdown.png" width="191" style="display: block; margin: auto;" /&gt;
+Bientôt !
 
-+ {`xaringan`} : Ce que vous voyez ici--&gt; a intégrer depuis CSS
+&lt;img src="img/propre_gouvdown.png" width="286" height="80%" style="display: block; margin: auto;" /&gt;
 
 ---
 
-## Utilitaires
+## Des templates R Markdown
 
-+ Intégration des polices
+### Le template {`xaringan`}
 
-+ Blocs-marques
+Bientôt !
+
+Ce que vous voyez ici 
+
+--&gt; a intégrer le CSS dans le package
+
+--&gt; créer un template ad hoc dans {`gouvdown`}
+---
+
+## Des utilitaires
+
++ Intégration des polices **Marianne** et **Spectral**
+
++ Intégration des blocs-marques
 
 &lt;img src="img/blocs-marques gouv.png" width="768" style="display: block; margin: auto;" /&gt;
 
@@ -143,23 +188,33 @@ class: inverse, center, middle
 # Et ensuite ?
 
 ---
+## Et ensuite ?
 
-## Encore des bouts à développer
+### Des fonctionnalités à intégrer
 
-+ d'autres formats Markdown
++ Bien documenter l'existant
 
-+ Shiny [-&gt; issue ici](https://github.com/spyrales/gouvdown/issues/7)
++ Ajouter d'autres formats Markdown
 
-## Une utilisation à diffuser
++ Ajouter un template Shiny [-&gt; issue ici](https://github.com/spyrales/gouvdown/issues/7)
+
++ Ajouter des feuilles de style ad-hoc pour les htmlwidgets (type `{apexcharter}`)
+
+### Une utilisation à diffuser
 
 + Besoin d'utilisations et de reprises dans différents contextes
 
 + Ce n'est jamais qu'un package "support" de réalisations plus belles
+---
+## Et ensuite ?
 
-## Ouverture aux contributions
+### Ouverture aux contributions
 
 Les contributions sont ouvertes à tous.
 
+### Une gouvernance à mettre en place
+
+En lien avec https://www.systeme-de-design.gouv.fr/ ?
 ---
 # Liens
 
@@ -169,7 +224,11 @@ Les contributions sont ouvertes à tous.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
-<script>var slideshow = remark.create();
+<script>var slideshow = remark.create({
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>`"
+});
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
 });

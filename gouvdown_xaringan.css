@@ -30,9 +30,17 @@
   /* Inverse slides */
   .inverse {
     background-size: 1200px !important;
-    background-color: #cecece;
+    background-color: #000091;
   }
   
+  .inverse  h1 {
+    color: #FFF;
+  }
+
+  .inverse > h2 {
+      color: #FFF;
+  }
+
   .inverse .remark-slide-number {
     color: transparent;
   }
